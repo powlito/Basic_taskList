@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\repos\\Terrain-Data-Simulator\\PaulHagerling-Example\\PaulHagerling-Example\\PaulHagerling-Example.csproj": {}
+    "C:\\git\\repos\\Basic_taskList\\PaulHagerling-Example\\PaulHagerling-Example\\PaulHagerling-Example.csproj": {}
   },
   "projects": {
-    "C:\\git\\repos\\Terrain-Data-Simulator\\PaulHagerling-Example\\PaulHagerling-Example\\PaulHagerling-Example.csproj": {
+    "C:\\git\\repos\\Basic_taskList\\PaulHagerling-Example\\PaulHagerling-Example\\PaulHagerling-Example.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\repos\\Terrain-Data-Simulator\\PaulHagerling-Example\\PaulHagerling-Example\\PaulHagerling-Example.csproj",
+        "projectUniqueName": "C:\\git\\repos\\Basic_taskList\\PaulHagerling-Example\\PaulHagerling-Example\\PaulHagerling-Example.csproj",
         "projectName": "PaulHagerling-Example",
-        "projectPath": "C:\\git\\repos\\Terrain-Data-Simulator\\PaulHagerling-Example\\PaulHagerling-Example\\PaulHagerling-Example.csproj",
+        "projectPath": "C:\\git\\repos\\Basic_taskList\\PaulHagerling-Example\\PaulHagerling-Example\\PaulHagerling-Example.csproj",
         "packagesPath": "C:\\Users\\C14348B\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\repos\\Terrain-Data-Simulator\\PaulHagerling-Example\\PaulHagerling-Example\\obj\\",
+        "outputPath": "C:\\git\\repos\\Basic_taskList\\PaulHagerling-Example\\PaulHagerling-Example\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\C14348B\\AppData\\Roaming\\NuGet\\NuGet.Config",

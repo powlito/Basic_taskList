@@ -18,7 +18,7 @@ namespace WpfApp
                 Name = name;
             }
 
-            ComboBoxDay.SelectedItem =  ComboBoxDay.Items.Cast<ComboBoxItem>().FirstOrDefault(cbi => Helper.dayFromString(cbi.Content?.ToString()?? "Sunday") == day);
+            ComboBoxDay.SelectedItem =  ComboBoxDay.Items.Cast<ComboBoxItem>().FirstOrDefault(cbi => Helper.DayFromString(cbi.Content?.ToString()?? "Sunday") == day);
                 Day = day;
             
         }
@@ -28,7 +28,7 @@ namespace WpfApp
             Name = TextBoxItem.Text;
             if (ComboBoxDay.SelectedItem is ComboBoxItem selectedItem)
             {
-                Day = Helper.dayFromString(selectedItem.Content?.ToString()?? "");
+                Day = Helper.DayFromString(selectedItem.Content?.ToString()?? "");
             }
             DialogResult = true;
             Close();

@@ -8,7 +8,7 @@ namespace PaulHagerling_Example
 {
     public static class Helper
     {
-        public static DayOfWeek dayFromString(string dayString)
+        public static DayOfWeek DayFromString(string dayString)
         {
             switch (dayString.ToLower())
             {

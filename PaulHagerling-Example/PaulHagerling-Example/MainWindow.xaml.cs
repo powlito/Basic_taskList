@@ -80,7 +80,7 @@ namespace WpfApp
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            AddEditWindow addWindow = new AddEditWindow("", Helper.dayFromString( GetSelectedDay()));
+            AddEditWindow addWindow = new AddEditWindow("", Helper.DayFromString( GetSelectedDay()));
             if (addWindow.ShowDialog() == true)
             {
                 Checklist.Add(new CheckListItem { day = addWindow.Day, name = addWindow.Name });
