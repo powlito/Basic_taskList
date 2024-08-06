@@ -44,7 +44,7 @@ namespace WpfApp
         {
             if (e.Item is CheckListItem item)
             {
-                e.Accepted = item.day == DayOfWeek.Tuesday; ;
+                e.Accepted = item.day == DayOfWeek.Tuesday;
             }
         }
         private void WednesdayViewSource_Filter(object sender, FilterEventArgs e)
