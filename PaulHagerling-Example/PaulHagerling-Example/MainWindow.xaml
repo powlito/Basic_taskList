@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Weekly Checklist" Height="450" Width="800">
+    <Window.Resources>
+        <CollectionViewSource x:Key="ItemsViewSource" Source="{Binding Checklist}" Filter="ItemsViewSource_Filter"/>
+        <CollectionViewSource x:Key="SundayViewSource" Source="{Binding Checklist}" Filter="SundayViewSource_Filter"/>
+        
+        
+        <CollectionViewSource x:Key="MondayViewSource" Source="{Binding Checklist}" Filter="MondayViewSource_Filter"/>
+        <CollectionViewSource x:Key="TuesdayViewSource" Source="{Binding Checklist}" Filter="TuesdayViewSource_Filter"/>
+        <CollectionViewSource x:Key="WednesdayViewSource" Source="{Binding Checklist}" Filter="WednesdayViewSource_Filter"/>
+        <CollectionViewSource x:Key="ThursdayViewSource" Source="{Binding Checklist}" Filter="ThursdayViewSource_Filter"/>
+        <CollectionViewSource x:Key="FridayViewSource" Source="{Binding Checklist}" Filter="FridayViewSource_Filter"/>
+        <CollectionViewSource x:Key="SaturdayViewSource" Source="{Binding Checklist}" Filter="SaturdayViewSource_Filter"/>
+    </Window.Resources>
+    <Grid DataContext="{Binding RelativeSource={RelativeSource Self}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TabControl x:Name="TabControlDays" SelectionChanged="TabControlDays_SelectionChanged">
+            <TabItem Header="All">
+                <ListBox DisplayMemberPath="Name"  IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Source={StaticResource ItemsViewSource}}"/>
+            </TabItem>
+            <TabItem Header="Sunday">
+                <ListBox DisplayMemberPath="Name"  IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Source={StaticResource SundayViewSource}}"/>
+            </TabItem>
+            <TabItem Header="Monday">
+                <ListBox DisplayMemberPath="Name"  IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Source={StaticResource MondayViewSource}}"/>
+            </TabItem>
+            <TabItem Header="Tuesday">
+                <ListBox DisplayMemberPath="Name"  IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Source={StaticResource TuesdayViewSource}}"/>
+            </TabItem>
+            <TabItem Header="Wednesday">
+                <ListBox DisplayMemberPath="Name"  IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Source={StaticResource WednesdayViewSource}}"/>
+            </TabItem>
+            <TabItem Header="Thursday">
+                <ListBox DisplayMemberPath="Name"  IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Source={StaticResource ThursdayViewSource}}"/>
+            </TabItem>
+            <TabItem Header="Friday">
+                <ListBox DisplayMemberPath="Name"  IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Source={StaticResource FridayViewSource}}"/>
+            </TabItem>
+            <TabItem Header="Saturday">
+                <ListBox DisplayMemberPath="Name" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Source={StaticResource SaturdayViewSource}}"/>
+            </TabItem>
+        </TabControl>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Content="Add" Click="AddButton_Click" Margin="5"/>
+            <Button Content="Edit" Click="EditButton_Click" Margin="5"/>
+            <Button Content="Delete" Click="DeleteButton_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
